@@ -2,7 +2,8 @@ import React from 'react';
 
 import Button from '../Button';
 
-import { Container, Topside, Logo, MenuButton, HomeIcon, BellIcon, EmailIcon, FavoriteIcon, ProfileIcon } from './styles';
+import { Container, Topside, Logo, MenuButton, HomeIcon,
+     BellIcon, EmailIcon, FavoriteIcon, ProfileIcon } from './styles';
 
 const MenuBar: React.FC = () => {
   return (
