@@ -3,13 +3,13 @@ import React from 'react';
 import Button from '../Button';
 
 import { Container, Topside, Logo, MenuButton, HomeIcon,
-     BellIcon, EmailIcon, FavoriteIcon, ProfileIcon } from './styles';
+     BellIcon, EmailIcon, FavoriteIcon, ProfileIcon, Botside, Avatar, ProfileData, ExitIcon } from './styles';
 
 const MenuBar: React.FC = () => {
   return (
       <Container>
-          <Topside>
-              <Logo />
+            <Topside>
+                <Logo />
 
                 <MenuButton>
                     <HomeIcon />
@@ -40,17 +40,18 @@ const MenuBar: React.FC = () => {
                     <span>Tweetar</span>
                 </Button>    
               
-          </Topside>
+            </Topside>
 
-          <BotSide>
-              <Avatar />
+            <Botside>
+                <Avatar />
 
-              <ProfileData>
-                  <strong>Marlon Mascarenhas</strong>
-                  <span>@MarlonMascarenhas</span>
-              </ProfileData>
-          </BotSide>
-      </Container>
+                <ProfileData>
+                    <strong>Marlon Mascarenhas</strong>
+                    <span>@MarlonMascarenhas</span>
+                </ProfileData>
+                <ExitIcon />
+            </Botside>
+        </Container>
   );
 }
 
