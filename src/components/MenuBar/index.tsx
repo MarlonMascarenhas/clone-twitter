@@ -1,9 +1,47 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import Button from '../Button';
+
+import { Container, Topside, Logo, MenuButton, HomeIcon, BellIcon, EmailIcon, FavoriteIcon, ProfileIcon } from './styles';
 
 const MenuBar: React.FC = () => {
-  return <div />;
+  return (
+      <Container>
+          <Topside>
+              <Logo />
+
+                <MenuButton>
+                    <HomeIcon />
+                    <span>Pagina inicial</span>
+                </MenuButton>
+                
+                <MenuButton>
+                    <BellIcon />
+                    <span>Notificacoes</span>
+                </MenuButton>
+                
+                <MenuButton>
+                    <EmailIcon />
+                    <span>Mensagens</span>
+                </MenuButton>
+                
+                <MenuButton>
+                    <FavoriteIcon />
+                    <span>Favoritados</span>
+                </MenuButton>
+                
+                <MenuButton className = "active">
+                    <ProfileIcon />
+                    <span>Perfil</span>
+                </MenuButton>
+
+                <Button>
+                    <span>Tweetar</span>
+                </Button>    
+              
+          </Topside>
+      </Container>
+  );
 }
 
 export default MenuBar;
