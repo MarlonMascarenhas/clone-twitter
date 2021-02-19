@@ -41,6 +41,15 @@ const MenuBar: React.FC = () => {
                 </Button>    
               
           </Topside>
+
+          <BotSide>
+              <Avatar />
+
+              <ProfileData>
+                  <strong>Marlon Mascarenhas</strong>
+                  <span>@MarlonMascarenhas</span>
+              </ProfileData>
+          </BotSide>
       </Container>
   );
 }
