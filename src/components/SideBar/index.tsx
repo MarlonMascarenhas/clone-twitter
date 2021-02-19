@@ -12,9 +12,7 @@ const SideBar: React.FC = () => {
             <Body>
                 <p>{'Lorem ipsum dolor sit amet. '.repeat(90)}</p>
             </Body>
-        </Container>  
-
-        
+        </Container>
     );
 }
 

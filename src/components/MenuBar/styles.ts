@@ -18,10 +18,10 @@ export const Container = styled.div`
         padding: 9px 19px 20px;
 
         max-height: 100vh;
-
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 `;
+
 export const Topside = styled.div`
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ export const Topside = styled.div`
         align-items: flex-start;
     }
 `;
-export const Logo = styled.div`
+export const Logo = styled(Rocketseat)`
     width: 41px;
     height: 41px;
 
